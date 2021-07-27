@@ -349,6 +349,13 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+echarts@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.nlark.com/echarts/download/echarts-5.1.2.tgz?cache=0&sync_timestamp=1623167264935&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fecharts%2Fdownload%2Fecharts-5.1.2.tgz#aa1ab0cef5b74fa2f7c620261a5f286893d30fd1"
+  dependencies:
+    tslib "2.0.3"
+    zrender "5.1.1"
+
 electron-to-chromium@^1.3.649:
   version "1.3.682"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.682.tgz#f4b5c8d4479df96b61e508a721d6c32c1262ef23"
@@ -852,6 +859,10 @@ to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
+tslib@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.nlark.com/tslib/download/tslib-2.0.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
+
 tslib@^2.0.3:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
@@ -930,3 +941,9 @@ xtend@^4.0.2:
 yallist@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
+
+zrender@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.nlark.com/zrender/download/zrender-5.1.1.tgz#0515f4f8cc0f4742f02a6b8819550a6d13d64c5c"
+  dependencies:
+    tslib "2.0.3"
