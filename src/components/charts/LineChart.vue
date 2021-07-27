@@ -3,7 +3,7 @@
  * @Author: xkloveme
  * @Date: 2021-01-14 15:10:44
  * @LastEditors: xkloveme
- * @LastEditTime: 2021-07-27 13:00:03
+ * @LastEditTime: 2021-07-27 18:20:42
 -->
 <template>
   <div
@@ -26,17 +26,15 @@ export default defineComponent({
     },
     id: {
       type: String,
-      default: 'lineChartsCompoents'
+      default: 'lineChartsCompoents' + new Date()
     },
     width: {
       type: String,
-      default: '200px',
-      required: true
+      default: '100%'
     },
     height: {
       type: String,
-      default: '200px',
-      required: true
+      default: '200px'
     },
     minHeight:{
       type: String,
