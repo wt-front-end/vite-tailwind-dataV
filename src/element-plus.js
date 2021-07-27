@@ -1,7 +1,7 @@
 /*
  * @Author: xkloveme
  * @Date: 2021-07-27 12:33:02
- * @LastEditTime: 2021-07-27 12:36:54
+ * @LastEditTime: 2021-07-27 15:01:58
  * @LastEditors: xkloveme
  * @Description: element-plus router引入
  * @FilePath: /shijianwei-dx-hidden-danger/src/element-plus.js
@@ -13,6 +13,7 @@ import { routes } from './routes.js'
 import { createRouter, createWebHistory } from 'vue-router'
 // 如果要使用.scss样式文件，则需要引入base.scss文件
 // import 'element-plus/packages/theme-chalk/src/base.scss'
+import WtUI from './packages'
 
 import {
   ElAlert,
@@ -194,6 +195,7 @@ const app = createApp(App)
 components.forEach(component => {
   app.component(component.name, component)
 })
+app.use(WtUI)
 
 plugins.forEach(plugin => {
   app.use(plugin)

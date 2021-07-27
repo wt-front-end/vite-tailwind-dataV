@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-transparent bg-blue-500">
     <div class="max-w-screen-xl mx-auto py-6 sm:px-6 lg:px-8">
       <router-link
         v-for="(link, i) in links"
@@ -21,8 +21,8 @@
           >{{ link.text }}</a
         >
       </router-link>
-      <router-view />
     </div>
+    <router-view />
   </div>
 </template>
 
