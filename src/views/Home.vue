@@ -2,7 +2,7 @@
   <wt-card title="综合风险统计">
     <div class="grid grid-flow-col grid-cols-3">
       <div>
-        <wt-title title="全市当前风险点情况统计" needClick> </wt-title>
+        <wt-title title="全市当前风险点情况统计" needClick @handleClick="showModal=true"> </wt-title>
         <PieChart id="1" />
       </div>
       <div>
@@ -26,7 +26,7 @@
         <PieChart id="4"/>
       </div>
       <div>
-        <wt-title title="高中风险数量点演变统计(以月为单位) " needClick>
+        <wt-title title="高中风险数量点演变统计(以月为单位) " needClick @handleClick="showModal=true">
         </wt-title>
         <LineChart />
       </div>
