@@ -13,8 +13,8 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '/api': {
-        target: 'http://30.207.88.109:33202',
+      '/prod-api': {
+        target: 'https://qlca.qdh.gov.cn',
         //target: 'http://192.168.11.32:3202', // 李斌
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),

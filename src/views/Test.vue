@@ -1,7 +1,7 @@
 <template>
   <main>
     <el-button type="primary" @click="openModal">主要按钮</el-button>
-    <el-button type="success">成功按钮</el-button>
+    <el-button type="success" @click="getData">成功按钮</el-button>
     <el-button type="info">信息按钮</el-button>
     <el-button type="warning">警告按钮</el-button>
     <el-button type="danger">危险按钮</el-button>
@@ -55,6 +55,10 @@ export default defineComponent({
     openModal() {
       this.showModal = true
     },
+    getData(){
+      console.log(11,this)
+      this.$api.getZjApi({id:280}).then((res) =>console.log(2222,res))
+    }
   },
 })
 </script>
