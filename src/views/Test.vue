@@ -71,7 +71,7 @@ export default defineComponent({
   color: red;
   .class2 {
     color: #000;
-    backgroundColor:#f0f;
+    background-color:#f0f;
     padding: 10px;
   }
 }
