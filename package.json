@@ -10,6 +10,7 @@
     "axios": "^0.21.1",
     "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.36",
+    "postcss-nested": "^5.0.6",
     "vue": "^3.0.7",
     "vue-router": "^4.0.5"
   },

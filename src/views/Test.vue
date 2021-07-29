@@ -1,5 +1,9 @@
 <template>
   <main>
+    <div class="class1">
+      111
+      <div class="class2">22333</div>
+    </div>
     <el-button type="primary" @click="openModal">主要按钮</el-button>
     <el-button type="success" @click="getData">成功按钮</el-button>
     <el-button type="info">信息按钮</el-button>
@@ -16,9 +20,9 @@
         <wt-title title="全市当前风险点情况统计"> </wt-title>
         <LineChart id="2" />
       </div>
-      <div >
+      <div>
         <wt-title title="全市当前风险点情况统计"> </wt-title>
-        <LineChart id="3"/>
+        <LineChart id="3" />
       </div>
     </div>
   </wt-card>
@@ -47,7 +51,7 @@ import { defineComponent } from 'vue'
 import LineChart from '@/components/charts/LineChart.vue'
 import PieChart from '@/components/charts/PieChart.vue'
 export default defineComponent({
-  components: { LineChart,PieChart },
+  components: { LineChart, PieChart },
   data: () => ({
     showModal: false,
   }),
@@ -55,10 +59,20 @@ export default defineComponent({
     openModal() {
       this.showModal = true
     },
-    getData(){
-      console.log(11,this)
-      this.$api.getZjApi({id:280}).then((res) =>console.log(2222,res))
-    }
+    getData() {
+      console.log(11, this)
+      this.$api.getZjApi({ id: 280 }).then((res) => console.log(2222, res))
+    },
   },
 })
 </script>
+<style lang="postcss" scoped>
+.class1 {
+  color: red;
+  .class2 {
+    color: #000;
+    backgroundColor:#f0f;
+    padding: 10px;
+  }
+}
+</style>
