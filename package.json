@@ -1,7 +1,9 @@
 {
-  "name": "shijianwei-dx-hidden-danger",
-  "version": "1.0.0",
-  "private": true,
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "author": "<%= author %>",
+  "description": "<%= description %>",
+  "email": "<%= email %>",
   "scripts": {
     "dev": "vite",
     "build": "cross-env NODE_ENV=production vite build"
