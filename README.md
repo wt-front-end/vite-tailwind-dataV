@@ -1,4 +1,4 @@
-# 市建委的城市地下隐患智防应用
+# 大屏简单高效模版
 
 > A [Tailwind CSS](http://tailwindcss.com/) starter template for [Vite](https://github.com/vitejs/vite)
 
